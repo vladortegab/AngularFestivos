@@ -1,0 +1,46 @@
+/* styles.css o styles.scss */
+
+/* Estilo para resaltar filas impares */
+.dark ngx-datatable-row-odd {
+    background-color: #f0f0f0; 
+  }
+  
+  /* Estilo para resaltar filas pares */
+  .dark ngx-datatable-row-even {
+    background-color: #ffffff; 
+  }
+  
+  /* Estilo para el encabezado de la tabla */
+  .dark ngx-datatable-header-cell {
+    background-color: #333; 
+    color: #fff; 
+  }
+:host ::ng-deep .datatable-body-cell {
+  padding: 10px !important;
+  border: 2px solid #000;
+}
+
+:host ::ng-deep .datatable-body-cell-label {
+  background-color: #ccc;
+}
+
+:host ::ng-deep .datatable-header-cell {
+  background-color: #ccc;
+  border: 2px solid #000;
+}
+
+@media print {
+  :host ::ng-deep .datatable-body-cell {
+    padding: 10px !important;
+    border: 2px solid #000;
+  }
+
+  :host ::ng-deep .datatable-body-cell-label {
+    background-color: #ccc;
+  }
+
+  :host ::ng-deep .datatable-header-cell {
+    background-color: #ccc;
+    border: 2px solid #000;
+  }
+}
